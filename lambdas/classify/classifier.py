@@ -1,5 +1,4 @@
 import io
-import os
 
 import boto3
 import joblib
@@ -7,12 +6,9 @@ import joblib
 from preprocesser import preprocess
 
 
-class LogisticRegressionClassifier():
+class LogisticRegressionClassifier:
     def __init__(self):
-        module_dir = os.path.dirname(__file__)
-        self.models_dir = os.path.join(module_dir, 'models')
         self.load_model()
-        super().__init__()
 
     def load_model(self):
         s3 = boto3.client('s3')
