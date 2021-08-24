@@ -1,0 +1,5 @@
+{   "name" : "Twish",
+    "description" : "Tweets Classifier App",
+    "predictor":{"labels":[ {"id":0,"label":"Help requests"},
+                            {"id":1,"label":"Help offers"},
+                            {"id":2,"label":"Other"}]}}
